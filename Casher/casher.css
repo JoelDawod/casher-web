@@ -1,0 +1,211 @@
+html
+{
+    height: 100%;
+}
+body
+{
+    display: grid;
+    grid-template-rows: [header]0.08fr[main] 1.3fr;
+    grid-template-columns:[main]1fr [side2] 0.5fr;
+    grid-template-areas:"header header""main side2";
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(233, 233, 233);
+    height: 100%;
+    width: 100%;
+}
+#header
+{
+    background-color: rgb(252, 170, 70);
+    grid-area: header;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: fit-content;
+    
+}
+#header h1
+{
+    background-color: black;
+    color: white;
+
+    font-size: 3vw;
+    text-align: center;
+
+    padding-top: 1%;
+    padding-bottom: 1%;
+    border-radius: 100px;
+
+    flex: 0 1 20%;
+}
+#main
+{
+    grid-area: main;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    overflow-y: scroll;
+    
+    position: s;
+}
+#main::-webkit-scrollbar
+{
+    width: 5px;
+}
+#main::-webkit-scrollbar-thumb
+{
+    background: gray;
+    border-radius: 10px;
+}
+#main a
+{
+    text-decoration: none;
+    color: black;
+}
+#main .item
+{
+    padding: 3%;
+    margin: 2%;
+    border: 5px solid rgb(197, 197, 197);
+    border-radius: 10px;
+    height: fit-content;
+    background-color: rgb(204, 204, 204);
+    position: relative;
+    flex: 0 1 auto;
+    
+}
+#main .item:hover
+{
+    border-bottom: 5px solid rgb(211, 211, 211);
+    background-color: rgb(174, 174, 174);
+}
+#main .item img
+{
+    width: 100%;
+    border-radius: 5px;
+}
+#main .item .name
+{
+    font-size: 4vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#main .item .price
+{
+    font-size: 3vw;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+#main .item button
+{
+    background-color: rgb(0, 255, 0);
+    color: white;
+    font-size: 20px;
+    width: 60%;
+    position: relative;
+    left: 20%;
+    border: none;
+    border-radius: 10px;
+    font-size: 3vw;
+}
+#main .item button:hover
+{
+    background-color: rgb(0, 172, 0);
+}
+#main .item button:active
+{
+    background-color: green;
+}
+
+#side2
+{
+    background-color: rgb(224, 224, 224);
+    grid-area: side2;
+    position: relative;
+    overflow-y: hidden;
+}
+
+#side2 #c
+{
+    font-size: 2vw;
+    text-align: center;
+    text-transform: capitalize;
+    background-color: rgb(170, 170, 170);
+    margin-top: 0;
+    padding: 5% 0 5% 0;
+}
+#side2 #items
+{
+    align-items: center;
+    overflow-y: scroll;
+
+    height: 50%;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+#side2 #items::-webkit-scrollbar
+{
+    width: 5px;
+}
+#side2 #items::-webkit-scrollbar-thumb
+{
+    background: gray;
+    border-radius: 10px;
+}
+#side2 #items .item
+{
+    border: 3px solid orange;
+    border-radius: 10px;
+    width: 90%;
+    padding: 1%;
+    flex: 0 1 auto;
+}
+#side2 #items .item p
+{
+    font-size: 2vw;
+}
+#side2 #items .item button
+{
+    border: none;
+    border-radius: 5px;
+    background-color: red;
+    color: white;
+    font-size: 2vw;
+    height: 50%;
+    top: 25%;
+    position: relative;
+    float: right;
+}
+#side2 #items .item button:hover
+{
+    background-color: rgb(196, 0, 0);
+}
+#side2 #items .item button:active
+{
+    background-color: rgb(173, 0, 0);
+}
+#side2 #total
+{
+    font-size: 2vw;
+    margin-left: 5%;
+}
+#side2 #check
+{
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(0, 255, 0);
+    color: rgb(75, 75, 75);
+    font-size: 2vw;
+}
+#side2 #check:hover
+{
+    background-color: rgb(2, 192, 2);
+}
+#side2 #check:active
+{
+    background-color: green;
+}

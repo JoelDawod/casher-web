@@ -1,0 +1,58 @@
+[
+    {
+        "id":1,
+        "name":"item 1",
+        "price":25,
+        "category":"men",
+        "size":"XL"
+    },
+    {
+        "id":2,
+        "name":"item 2",
+        "price":24,
+        "category":"women",
+        "size":"XL"
+    },
+    {
+        "id":3,
+        "name":"item 3",
+        "price":15,
+        "category":"boys",
+        "size":"L"
+    },
+    {
+        "id":4,
+        "name":"item 4",
+        "price":14,
+        "category":"girls",
+        "size":"L"
+    },
+    {
+        "id":5,
+        "name":"item 5",
+        "price":6,
+        "category":"babys",
+        "size":"S"
+    },
+    {
+        "id":6,
+        "name":"item 6",
+        "price":18,
+        "category":"men",
+        "size":"XXL"
+    },
+    {
+        "id":7,
+        "name":"item 7",
+        "price":30,
+        "category":"women",
+        "size":"XL"
+    },
+    {
+        "id":8,
+        "name":"item 8",
+        "price":12,
+        "category":"boys",
+        "size":"XL"
+    }
+]
